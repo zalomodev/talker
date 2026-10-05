@@ -1,0 +1,46 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Rust / Tauri
+src-tauri/target
+target
+*.onnx
+models/*.bin
+models/*.safetensors
+models/*.gguf
+
+# Large model archives / audio (downloaded at runtime, never commit)
+*.tar.bz2
+*.wav
+*.mp3
+
+# Dev run logs
+T.log
+R.log
+dev.log
+dev2.log
+dev3.log
+dev4.log
+dev5.log
