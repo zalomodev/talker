@@ -1,6 +1,6 @@
 # Talker
 
-> [Español](README.md) · [English](README.en.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [Português (BR)](README.pt-BR.md)
+> [Español](README.es.md) · [English](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [Português (BR)](README.pt-BR.md)
 
 Windows 悬浮窗，**实时转录**你正在观看的应用 / 视频音频，并**实时翻译**。
 

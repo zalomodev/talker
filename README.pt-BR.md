@@ -1,6 +1,6 @@
 # Talker
 
-> [Español](README.md) · [English](README.en.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [Português (BR)](README.pt-BR.md)
+> [Español](README.es.md) · [English](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [Português (BR)](README.pt-BR.md)
 
 Overlay para Windows que **transcreve ao vivo** o áudio dos seus apps e vídeos, e **traduz** em tempo real.
 

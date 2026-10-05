@@ -1,6 +1,6 @@
 # Talker
 
-> [Español](README.md) · [English](README.en.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [Português (BR)](README.pt-BR.md)
+> [Español](README.es.md) · [English](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [Português (BR)](README.pt-BR.md)
 
 視聴中のアプリ / 動画の音声を**リアルタイムで文字起こし**し、**翻訳**する Windows 用オーバーレイ。
 

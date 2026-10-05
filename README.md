@@ -1,44 +1,44 @@
 # Talker
 
-> [Español](README.md) · [English](README.en.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [Português (BR)](README.pt-BR.md)
+> [Español](README.es.md) · [English](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [Português (BR)](README.pt-BR.md)
 
-Overlay para Windows que **transcribe en vivo** el audio de tus apps y videos, y lo **traduce** en tiempo real.
+A Windows overlay that **transcribes live** audio from your apps and videos, and **translates** it in real time.
 
-## Qué hace
+## What it does
 
-- 🎙️ Transcripción en tiempo real sobre el video o app que estés viendo.
-- 🌍 Traducción automática con IA (ej. español → inglés).
-- 💻 100% local con [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) (modelos streaming ES/EN), o en la nube con Groq.
-- 🪟 Overlay flotante minimalista: typewriter en vivo, idioma detectado y tiempo de transcripción.
-- 🎯 Captura el sonido del sistema o sigue la app activa.
-- 📦 Los modelos se descargan solos desde la app (pestaña Modelos).
+- 🎙️ Real-time transcription over the video or app you are watching.
+- 🌍 Automatic AI translation (e.g. Spanish → English).
+- 💻 100% local with [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) (ES/EN streaming models), or cloud via Groq.
+- 🪟 Minimal floating overlay: live typewriter, detected language, transcription latency.
+- 🎯 Captures system sound or follows the active app.
+- 📦 Models download themselves from inside the app (Models tab).
 
-## Instalación
+## Install
 
-1. Descarga el `.msi` o el `.exe` desde la pestaña **Releases**.
-2. Instala / ejecuta, abre Ajustes → Voz → elige **Sherpa (tiempo real, local)**.
-3. En Modelos descarga **Sherpa Spanish** (o el de tu idioma).
-4. Activa el **ON** y reproduce tu video.
+1. Download the `.msi` or `.exe` from the **Releases** tab.
+2. Install / run, open Settings → Speech → pick **Sherpa (real-time, local)**.
+3. Under Models, download **Sherpa Spanish** (or your language).
+4. Toggle **ON** and play your video.
 
-## Modelos incluidos
+## Included models
 
-| Modelo | Idioma | Fuente |
+| Model | Language | Source |
 |---|---|---|
-| `sherpa-onnx-streaming-zipformer-es-kroko-2025-08-06` | Español | Hugging Face |
-| `sherpa-onnx-streaming-zipformer-en-20M-2023-02-17` | Inglés | GitHub Releases |
-| `sherpa-onnx-streaming-zipformer-en-2023-06-26` | Inglés | GitHub Releases |
-| `sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20` | Chino + Inglés | GitHub Releases |
+| `sherpa-onnx-streaming-zipformer-es-kroko-2025-08-06` | Spanish | Hugging Face |
+| `sherpa-onnx-streaming-zipformer-en-20M-2023-02-17` | English | GitHub Releases |
+| `sherpa-onnx-streaming-zipformer-en-2023-06-26` | English | GitHub Releases |
+| `sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20` | Chinese + English | GitHub Releases |
 
-## Compilar desde fuente
+## Build from source
 
-Requisitos: Windows, [Rust](https://rustup.rs/) (MSVC), Node 20+ y `pnpm`.
+Requirements: Windows, [Rust](https://rustup.rs/) (MSVC), Node 20+ and `pnpm`.
 
 ```bash
 pnpm install
-pnpm tauri dev     # modo desarrollo
-pnpm tauri build   # genera .exe + .msi
+pnpm tauri dev     # development mode
+pnpm tauri build   # produces .exe + .msi
 ```
 
-## Licencia
+## License
 
-Proyecto abierto bajo **Apache License 2.0** — puedes hacer lo que quieras con él: usarlo, modificarlo, venderlo, sin pedir permiso. Ver [LICENSE](LICENSE).
+Open project under the **Apache License 2.0** — do whatever you want with it: use, modify, sell, no permission needed. See [LICENSE](LICENSE).
