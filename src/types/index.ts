@@ -1,5 +1,6 @@
 export interface AppSettings {
   theme: 'light' | 'dark';
+  ui_language: 'es' | 'en';
   audio_mode: 'auto_foreground' | 'pinned_process' | 'system_loopback';
   pinned_pid: number | null;
   transcription_provider: 'local' | 'groq' | 'sherpa';

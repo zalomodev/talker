@@ -13,9 +13,15 @@ fn default_true() -> bool {
     true
 }
 
+fn default_ui_language() -> String {
+    "en".to_string()
+}
+
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct AppSettings {
     pub theme: String,
+    #[serde(default = "default_ui_language")]
+    pub ui_language: String,
     pub audio_mode: String,
     pub pinned_pid: Option<u32>,
     pub transcription_provider: String,
@@ -44,6 +50,7 @@ impl Default for AppSettings {
     fn default() -> Self {
         Self {
             theme: "light".to_string(),
+            ui_language: default_ui_language(),
             audio_mode: "auto_foreground".to_string(),
             pinned_pid: None,
             transcription_provider: "groq".to_string(),
