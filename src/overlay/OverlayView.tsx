@@ -107,7 +107,7 @@ export const OverlayView: React.FC = () => {
           {showTempo && tempoLabel && (
             <span
               key={tempoLabel}
-              title="Tiempo de transcripción"
+              title="Transcription time"
               className="flex items-center gap-1 text-[10px] font-mono text-neutral-500 dark:text-neutral-400 bg-neutral-100 dark:bg-neutral-800 px-1.5 py-0.5 rounded animate-fade-in"
             >
               <Timer size={10} />
@@ -116,7 +116,7 @@ export const OverlayView: React.FC = () => {
           )}
           {isEditMode && (
             <span className="text-[10px] text-amber-700 dark:text-amber-400 bg-amber-100/80 dark:bg-amber-950/60 px-1.5 py-0.5 rounded font-mono">
-              Moviendo
+              Repositioning
             </span>
           )}
         </div>
@@ -136,7 +136,7 @@ export const OverlayView: React.FC = () => {
             </span>
             <button
               onClick={toggleTranscription}
-              title={isTranscribing ? 'Dejar de escuchar' : 'Escuchar'}
+              title={isTranscribing ? 'Stop listening' : 'Start listening'}
               className={`relative inline-flex h-4 w-7 items-center rounded-full transition-colors focus:outline-none ${
                 isTranscribing
                   ? 'bg-neutral-800 dark:bg-neutral-200'
@@ -154,7 +154,7 @@ export const OverlayView: React.FC = () => {
           {/* Edit / Lock position button */}
           <button
             onClick={handleToggleEdit}
-            title={isEditMode ? 'Fijar posición' : 'Mover ventana'}
+            title={isEditMode ? 'Lock position' : 'Reposition overlay'}
             className="p-1 text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200 rounded transition-colors"
           >
             {isEditMode ? <Lock size={13} /> : <Move size={13} />}
@@ -163,7 +163,7 @@ export const OverlayView: React.FC = () => {
           {/* Settings button */}
           <button
             onClick={() => setSettingsOpen(true)}
-            title="Ajustes"
+            title="Open Settings"
             className="p-1 text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200 rounded transition-colors"
           >
             <Settings size={13} />
@@ -173,7 +173,7 @@ export const OverlayView: React.FC = () => {
           {isEditMode && (
             <button
               onClick={handleClose}
-              title="Cerrar Talker"
+              title="Close Talker"
               className="p-1 text-neutral-400 hover:text-red-500 rounded transition-colors"
             >
               <X size={13} />
